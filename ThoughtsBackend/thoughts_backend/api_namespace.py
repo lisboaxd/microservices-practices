@@ -79,8 +79,9 @@ class MeThoughtListCreate(Resource):
 
 
 search_parser = api_namespace.parser()
+
 search_parser.add_argument('search', type=str, required=False,
-                            help='Search in the text of the thoughts')
+                           help='Search in the text of the thoughts')
 
 
 @api_namespace.route('/thoughts/')
